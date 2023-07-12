@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Test.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Professional AutoResume</title>
+</head>
+<body>
+    <div class="container" id="resume_form">
+        <h1>Resume Generator</h1>
+        <p class="text-center">By Ujjwal Kumar</p>
+        <div class="row">
+            <div class="col-md-6">
+                <!-- second Column -->
+                <h3>Professional Information</h3>
+                <div class="form-group mt-2">
+                    <label for="">Objective</label>  
+                    <textarea type="text" 
+                    id="objectiveField" placeholder="Enter Here" class="form-control" rows="5"></textarea>
+                </div>
+                <div class="form-group mt-2" id="work_experience">
+                    <label for="">Work Experience</label>  
+                    <textarea placeholder="Enter Here" class="form-control work_experienceField" rows="3"></textarea>
+                    <div class="text-center mt-2" id="work_experience_button">
+                        <button onclick="addwork_experienceField()" class="btn btn-dark">Add</button>
+                    </div>
+                </div>
+                <div class="form-group mt-2" id="academic_qualification">
+                    <label for="">Academic Qualification</label>  
+                    <textarea type="text" placeholder="Enter Here" class="form-control academic_qualificationField" rows="3"></textarea>
+                    <div class="text-center mt-2" id="academic_qualification_button">
+                        <button onclick="addacademic_qualificationField()" class="btn btn-dark">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center mt-5">
+            <button onclick="generateresume()" class="btn btn-dark btn-lg">
+                <a href="http://127.0.0.1:5500/resume_template.html" style="text-decoration: none;">Generate Resume</a>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

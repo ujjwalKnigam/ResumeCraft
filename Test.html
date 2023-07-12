@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Test.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js" integrity="sha512-w3u9q/DeneCSwUDjhiMNibTRh/1i/gScBVp2imNVAMCt6cUHIw6xzhzcPFIaL3Q1EbI2l+nu17q2aLJJLo4ZYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="crossorigin="anonymous"referrerpolicy="no-referrer"></script>
+    <script src="html2pdf.bundle.min.js"></script>
+    <title>Professional AutoResume</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light" >
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand" href="Day 4.html">Professional AutoResume</a> -->
+      <img src="Rest of the images/professional-autoresume-low-resolution-color-logo (1).png" alt="" style="width: 110px;height:80px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/Test.html" target="_blank">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <b>Resume</b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Resume Builder</a></li>
+              <li><a class="dropdown-item" href="#">Resume Examples</a></li>
+              <li><a class="dropdown-item" href="#">Resume Templates</a></li>
+              <li><a class="dropdown-item" href="#">How to Write a Resume</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Career Blogs</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light"  type="submit" style="color: black;"><i class="bi bi-search"></i></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <h1 class="header" align="center">
+      Land Your Dream Job
+      <br>
+      With a Proper Resume!
+      <!-- <ul>
+          <li><a href=""></a><a href=""></a><a href=""></a></li>
+      </ul> -->
+  </h1>
+  <br><br><br><br><br><br>
+  <!-- Button to start building your resume -->
+  <div align="center">
+    <button type="button" class="btn btn-dark "><a href="http://127.0.0.1:5500/personal.html" style="text-decoration: none;color:white">Click Here <br>To Start Building Your Resume</a>
+    </button>
+    <br>
+    <br>
+  </div>
+  <div align="center" style="font-size: 40px; font-family: 'Times New Roman', Times, serif; font-weight:bolder;">Only 2% of the resume make it past the <br> first round.Be in the top 2%.</div>
+  <br>
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="position:relative">
+    <div class="carousel-inner" align="center">
+      <div class="carousel-item active" data-interval="1000">
+        <img src="Perks/1.png" class="d-block  image1"  style = "width: 250px;height: 350px;" alt="...">
+      </div>
+      <div class="carousel-item" data-interval="1000">
+        <img src="Perks/2.png" class="d-block  image1"  style = "width: 250px;height: 350px"alt="...">
+      </div>
+      <div class="carousel-item" data-interval="1000">
+        <img src="Perks/3.png" class="d-block  image1"  style = "width: 250px;height: 350px"alt="...">
+      </div>
+      <div class="carousel-item" data-interval="1000">
+        <img src="Perks/4.png" class="d-block  image1"  style = "width: 250px;height: 350px"alt="...">
+      </div>
+      <div class="carousel-item" data-interval="1000">
+        <img src="Perks/5.png" class="d-block  image1"  style = "width: 250px;height: 350px"alt="...">
+       </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev" style="background-color: black;color: white;">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next"        style="background-color: black;color: white;">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+  <br><br><br><br><br>
+  <div align="center">
+    <p style="color:white;background-color: black;width:1000px ;height: 120px;text-align:center;padding-top:0px;font-size:40px;font-family:Verdana, Geneva, Tahoma, sans-serif;border-radius: 40px;">Make a resume <br> that stands out</p>
+    <br><br><br><br>
+    <div class="maindiv">
+      <div id="a" style="display: flexbox;clear:left;">
+        <img src="Grid1/1.png" alt="" style="width: 250px;height: 250px;float: left;">
+        <b style="font-size:25px;">Step-by-step guidance</b>
+        <br>
+        <p style="text-align: justify;">We do the work for you. Create a resume free, quickly and easily. Reduce the stress of writing a resume by adding pre-written content specific to the job. We'll guide you according to your desired position and industry. Building a resume has never been easier! If you need more assistance, don't hesitate to contact us. Our customer service team is standing by, ready to assist you. We are here to help! </p>
+      </div>
+      <div id="b" style="display: flexbox;">
+        <img src="Grid1/2.png" alt="" style="width:250px;height: 250px; float: right;">
+        <b style="font-size:25px;">Upload your resume or start from scratch</b>
+        <p style="text-align: justify;">With our online resume builder, you can upload your tried-and-true resume and it’ll automatically reformat to your newly chosen template. Or, if you're looking to start fresh, simply build a new resume in minutes with a few clicks for free in our resume generator.</p>
+      </div>
+      <div id="c" style="display: flexbox;">
+        <img src="Grid1/file.jpg" alt="" style="width: 250px;height: 250px;float: left;">
+        <b style="font-size: 25px;">Customize your resume for any industry and position</b>
+        <p style="text-align: justify;">It's simple to craft a resume for any industry. Simply copy and paste the job description and we’ll let you know how well your existing resume matches the job. From there, we provide actionable advice to improve your match score, helping you create a resume tailor-made for the job! Customize the layout and color scheme while the free resume creator takes care of the rest.</p>
+      </div>
+      <div id="d" style="display: flexbox;">
+        <img src="Grid1/Resume-Format-for-Freshers.png" alt="" style="width: 250px;height: 250px;float:right;">
+        <b style="font-size: 25px;">Resume Maker + Smart Apply = Success!</b>
+        <p style="text-align: justify;">Work smarter, not harder with Smart Apply. Our Resume Builder will guide you in every step of the way: from finding the right job, creating and downloading a targeted resume and cover letter, to sending in your application. Build a free resume and save time in a one-stop shop to advance your career!.</p>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br>
+  <div>
+    <div align="center">
+      <p style="text-align:center;color: white;width:1000px;height: 120px;border-radius: 20px; background-color: black;font-size:40px;font-family:Verdana, Geneva, Tahoma, sans-serif;"><b>Start from Various Professional Creative Resume Templates</b></p>
+    </div>
+    <br><br>
+    <div align="center">
+      <p style="text-align:justify; font-size:large;width: 1000px;">Unsure on how to start your creative resume design? Don't you worry about it. Our free resume builder offers numerous well-designed creative resume templates and creative resume examples. Go to browse those creative resume templates and get some inspiration today! Our online resume builder can be your magic wand. You just need to start your creative resume design with its premade professional creative resume template.</p>
+    </div>
+  </div>
+  <br><br><br><br>
+  <div id="carouselExampleAutoplaying1" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" align="center">
+      <div class="carousel-item active">
+        <img src="Templates/1.jpg" class="d-block" style = "width: 250px;height: 350px;" alt="...">
+      </div>
+        <div class="carousel-item">
+        <img src="Templates/2.png" class="d-block" style = "width: 250px;height: 350px;" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Templates/3.jpg" class="d-block" style = "width: 250px;height: 350px;" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Templates/4.jpg" class="d-block" style = "width: 250px;height: 350px;" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="prev" style="background-color: black;color: white;">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="next" style="background-color: black;color: white;">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br><br><br><br><br><br><br>
+  <!-- Footer -->
+  <div class="maindiv1">
+    <div id="e"><p style="font-size: x-large;">Follow Us : </p><br>
+      <button style="width: 50px;height: 50px;color: white;background-color: black; font-size: 30px;" ><a href="https://www.facebook.com/profile.php?id=100074815585900" style="color: inherit;"><i class="bi bi-facebook connected"></i></a></button>&nbsp;
+      <button  style="color:white;width: 50px;height: 50px;background-color: black; font-size: 30px;" ></i><a href="https://www.instagram.com/just_one_ujjwal/?next=%2F" style="color: inherit"><i class="bi bi-instagram connected"></i></a></button>&nbsp;
+      <br>
+      <br>
+      <button  style="color:white;width: 50px;height: 50px;background-color: black;font-size: 30px;" ><i class="bi bi-twitter connected"></i></button>&nbsp;
+      <button  style="color:white;width: 50px;height: 50px;background-color: black;font-size: 30px;"><a href="https://www.linkedin.com/in/ujjwal-kumar-iiitu-82920825a/" style="color: inherit"><i class="bi bi-linkedin connected"></i></a></button>&nbsp;
+    </div>
+    <div id="f" align="left"><p style="font-size: x-large;">Company</p>
+      <br>
+      <a href="http://127.0.0.1:5500/Test.html" target="_blank" style="text-decoration: none; color: white;">Home</a>
+      <br><br>
+      Careers
+      <br><br>
+      <a href="http://127.0.0.1:5500/Terms.html" style="text-decoration: none;color: white;" target="_blank">Terms and Privacy</a>
+      <br><br>
+    </div>
+    <div id="g"><p style="font-size: x-large;">Explore</p>
+      <br>
+      Design Ideas
+      <br><br>
+      Custom Prints
+      <br><br>
+      Font Pairing
+      <br><br>
+      Template Directory
+      <br><br>
+      Color Pallete Generator
+      <br><br>
+    </div>
+    <div id="h"><p style="font-size: x-large;">Customer Support</p>
+      <br>
+      Contact Us :
+      <br><br>
+      Call us at : <br> <a href="tel:6388179838" style="text-decoration: none;">6388179838</a>
+      <br><br>
+      Mail us at : 
+      <br>
+      <a href="mailto:21248@iiitu.ac.in" style="text-decoration: none;">21248@iiitu.ac.in</a>
+      <br><br>
+      <a href="http://127.0.0.1:5500/FAQ.html" style="color: white;text-decoration: none;" target="_blank">FAQs</a>
+      <br><br>
+    </div>
+  </div>
+</body>
+</html>

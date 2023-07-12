@@ -1,0 +1,99 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+h1
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-variant: small-caps;
+    text-align: center;
+}
+body
+{
+    /* background-image: url("resume-magnifying-glass-word-blurred-nature-background-searching-concept-80654779.jpg"); */
+    /* background-size: cover; */
+    overflow-x:hidden ;
+}
+.maindiv
+{
+    display: grid;
+    grid-template-areas:"a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1" 
+    "c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 d1 d1 d1 d1 d1 d1 d1 d1 d1 d1 d1 d1 d1 d1 d1 d1 d1 d1";
+    padding : 0px;
+    margin: 0px;
+    grid-gap:20px;
+    border-radius: 10px;
+    justify-content: center;
+}
+#a{grid-area: a1;width: 50vw;}
+#b{grid-area: b1;width: 50vw;}
+#c{grid-area: c1;width: 50vw;}
+#d{grid-area: d1;width: 50vw;}
+.maindiv > div{
+    padding : 20px;
+    margin-right:0px;
+    border-radius: 10px;
+    border-color: black;
+    text-align: center;
+    text-decoration: dotted;
+}
+.header
+{
+    /* opacity:0.5 ; */
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    width: 100%;
+    height: 100px;
+    border-color: black;
+    border-width: 10px;
+    position: absolute;
+    background-color: black;
+}
+.pressed:hover
+{
+    opacity: 0.4;
+}
+.footer
+{
+    text-align: center;
+    color: white;
+    left: 0px;
+    bottom: 0px;
+    margin: 0px;
+    width: 100%;
+    border-color: black;
+    position: relative;
+    background-color: black;
+}
+.connected:hover
+{
+    opacity: 0.5;
+}
+.maindiv1
+{
+    display: grid;
+    grid-template-areas:"e1 e1 e1 e1 e1 f1 f1 f1 f1 f1 g1 g1 g1 g1 g1 h1 h1 h1 h1 h1";
+    padding : 0px;
+    margin: 0px;
+    grid-gap:70px;
+    /* border-radius: 10px; */
+    background-color: black;
+    color: white;
+    justify-content: center;
+}
+#e{grid-area: e1;font-size:large;}
+#f{grid-area: f1;}
+#g{grid-area: g1;}
+#h{grid-area: h1;}
+.maindiv1 > div{
+    padding : 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border-color: black;
+    /* text-align: center; */
+    text-decoration: dotted;
+}

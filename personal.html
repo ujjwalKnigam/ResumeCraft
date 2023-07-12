@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="Test.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="crossorigin="anonymous"referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script src="html2pdf.bundle.min.js"></script>
+    <title>Professional AutoResume</title>
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg bg-light" id="navbar1" >
+        <div class="container-fluid">
+            <img src="Rest of the images/professional-autoresume-low-resolution-color-logo (1).png" alt="" style="width: 110px;height:80px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/Test.html" target="_blank">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <b>Resume</b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Resume Builder</a></li>
+                            <li><a class="dropdown-item" href="#">Resume Examples</a></li>
+                            <li><a class="dropdown-item" href="#">Resume Templates</a></li>
+                            <li><a class="dropdown-item" href="#">How to Write a Resume</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Career Blogs</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light"  type="submit" style="color: black;"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div align="center" style="background-color: black;width: 100%;" id="heading">
+        <h1 style="color: white;">Resume Generator</h1>
+        <p class="text-center" style="color: white;">By Ujjwal Kumar</p>
+    </div>
+    <div class="container mt-4" id="resume_form1" >
+        <h3 align="center">Personal Information</h3>
+        <div class="row" >
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <!-- first column -->
+                <div class="form-group">
+                    <label for=""><b>Select Profile Picture</b></label>
+                    <input type="file" id="profile_picture" class="form-control">
+                </div>
+                <div class="form-group mt-4 px-5">
+                    <label for="firstnameField"><b>First Name</b></label>  
+                    <input type="text" id="firstnameField" placeholder="Enter Here" class="form-control" >
+                </div>
+                <div class="form-group mt-4 px-5">
+                    <label for="lastnameField"><b>Last Name</b></label>  
+                    <input type="text" id="lastnameField" placeholder="Enter Here" class="form-control" >
+                </div>
+                <div class="form-group mt-4 px-5">
+                    <label for="contactField"><b>Contact Number</b></label>  
+                    <input type="number" id="contactField" placeholder="Enter Here" class="form-control">
+                </div>
+                <div class="form-group mt-4 px-5">
+                    <label for="addressField"><b>Address</b></label>  
+                    <textarea type="text" id="addressField" placeholder="Enter Here" class="form-control" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <p class="mt-4 px-5">Personal links</p>
+                <div class="form-group mt-4 px-5">
+                    <label for="facebookField"><b>Facebook</b></label>  
+                    <input type="text" id="facebookField" placeholder="Enter Here" class="form-control">
+                </div>
+                <div class="form-group mt-4 px-5">
+                    <label for="instagramField"><b>Instagram</b></label>  
+                    <input type="text" id="instagramField" placeholder="Enter Here" class="form-control">
+                </div>
+                <div class="form-group mt-4 px-5">
+                    <label for="linkedinField"><b>Linkedin</b></label>  
+                    <input type="text" id="linkedinField" placeholder="Enter Here" class="form-control">
+                </div>
+                <div class="form-group mt-4 px-5">
+                    <label for="gmailField"><b>Mail</b></label>
+                    <input type="email" id="gmailField" placeholder="Enter Here" class="form-control">
+                </div>
+                <div class="form-group mt-4 px-5">
+                    <label for="twitterField"><b>Twitter</b></label>
+                    <input type="text" placeholder="Enter Here" class="form-control" id="twitterField">
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="container text-center mt-5">
+            <button onclick="form1hide()" class="btn btn-primary btn-lg">
+                Next
+            </button>
+        </div>
+    </div>
+    <div class="container mt-4" id="resume_form2">
+        <div class="row">
+            <div class="col">
+                <!-- Professional Information -->
+                <h3 align="center">Professional Information</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group mt-2">
+                                <label for="">Objective</label>  
+                                <textarea type="text" 
+                                id="objectiveField" placeholder="Enter Here" class="form-control" rows="5"></textarea>
+                            </div>
+                            <div class="form-group mt-2" id="work_experience">
+                                <label for="">Work Experience</label>  
+                                <textarea placeholder="Enter Here" class="form-control work_experienceField" rows="3"></textarea>
+                                <div class="text-center mt-2" id="work_experience_button">
+                                    <button onclick="addwork_experienceField()" class="btn btn-dark">Add</button>
+                                </div>
+                            </div>
+                            <div class="form-group mt-2" id="skills">
+                                <label for="">Skills</label>
+                                <textarea placeholder="Enter Here" class="form-control skillField"></textarea>
+                                <div class="text-center mt-2" id="skills_button">
+                                    <button onclick="add_skills()" class="btn btn-dark">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group mt-2" id="academic_qualification">
+                                <label for="">Academic Qualification</label>  
+                                <textarea type="text" placeholder="Enter Here" class="form-control academic_qualificationField" rows="3"></textarea>
+                                <div class="text-center mt-2" id="academic_qualification_button">
+                                    <button onclick="addacademic_qualificationField()" class="btn btn-dark">Add</button>
+                                </div>
+                            </div>
+                            <div class="form-group mt-2" id="education">
+                                <label for="">Education</label>
+                                <textarea placeholder="Enter here" class="form-control educationField" rows="3"></textarea>
+                                <div class="text-center mt-2" id="education_button">
+                                    <button onclick="add_education()" class="btn btn-dark">Add</button>
+                                </div>
+                            </div>
+                            <div class="form-group mt-2" id="projects">
+                                <label for="">Projects</label>
+                                <textarea type="text" placeholder="Enter Here" class="form-control projectField"></textarea>
+                                <div class="text-center mt-2" id="projectbutton">
+                                    <button onclick="add_projects()" class="btn btn-dark">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center mt-5">
+            <button onclick="generateresume()" class="btn btn-primary btn-lg">
+                Generate Resume
+            </button>
+        </div>
+    </div>
+    <!-- Template Select Buttons -->
+    <div class="mt-4" id="template_buttons">
+        <h1>Choose Your Template</h1>
+        <br>
+        <div class="container">
+            <div class="row" style="margin-bottom: 30px;">
+                <div class="col-md-1"></div>
+                <!-- First Template -->
+                <div class="col-md-3">
+                    <button onclick="template1()"><img src="Final_Templates/Template1.png" style="width:500px;height:400px"></button>
+                </div>
+                <!-- space -->
+                <div class="col-md-2"></div>
+                <!-- second template -->
+                <div class="col-md-3">
+                    <button onclick="template2()"><img src="Final_Templates/Template2.png" style="width:500px;height:400px"></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <!-- third template -->
+                <div class="col-md-3">
+                    <button onclick="template3()"><img src="Final_Templates/Template3.png" style="width:500px;height:400px"></button>
+                </div>
+                <!-- space -->
+                <div class="col-md-2"></div>
+                <!--fourth template-->
+                <div class="col-md-3">
+                    <button onclick="template4()"><img src="Final_Templates/Template4.png" style="width:500px;height:400px"></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <!-- third template -->
+                <div class="col-md-3">
+                    <button onclick="template5()"><img src="Final_Templates/Template5.png" style="width:500px;height:400px"></button>
+                </div>
+                <!-- space -->
+                <div class="col-md-2"></div>
+                <!--fourth template-->
+                <div class="col-md-3">
+                    <button onclick="template4()"><img src="Final_Templates/Template4.png" style="width:500px;height:400px"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Resume-Template 1 -->
+    <div class="container mt-4" id="resume_template1">
+        <div class="text-center" style="width:100%;height:110px;background-color:rgb(31, 31, 113)">
+            <h1 id="nameT1" style="text-align:center;padding:20px;font-size:50px;color:rgb(196, 164, 84)">Ujjwal Kumar</h1>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-7">
+                            <div class="card" style="border: none;">
+                                <div class="card-header" style="border: none;background-color:white">
+                                    <b>CONTACT</b>
+                                </div>
+                                <div class="card-body" style="border:none;">
+                                    <p style="display: inline;"><i class="bi bi-envelope-fill" style="background-color: white;border-radius:2px;display:inline"></i><p><a href="#1" id="gmailT1" style="word-wrap:break-word ;text-decoration: none;color:black">ujjwal@gmail.com</a></p></p>
+                                    <p style="display: inline;"><i class="bi bi-linkedin" style="background-color: white;border-radius:2px;"></i><p><a href="#1" id="linkT1" style="word-wrap:break-word ;text-decoration: none;color:black">https://www.linkedin.com/Ujjwal_Kumar_Nigam</a></p></p>   
+                                    <p style="display: inline;"><i class="bi bi-phone-fill" style="border-radius:2px;background-color:white"></i><p style="color: black;" id="contactT1">6388179838</p></p>
+                                    <p style="display: inline;"><i class="bi bi-geo-alt-fill" style="border-radius:2px;background-color:white;"></i><p style="color: black;" id="addressT1">Aashiana,Lko</p></p>
+                                </div>
+                            </div>
+                            <div class="card" style="border:none">
+                                <div class="card-header" style="border:none;background-color:white;"><b>Education</b></div>
+                                <div class="card-body" style="border:none;background-color:none;">
+                                    <ul id="educationT1">
+                                        <li>one</li>
+                                        <li>two</li>
+                                        <li>three</li>
+                                        <li>four</li>
+                                        <li>five</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card" style="border:none">
+                                <div class="card-header" style="border:none;background-color:white">
+                                    <b>Skills</b>
+                                </div>
+                                <div class="card-body" style="border:none;background-color:white">
+                                    <ul id="skillsT1">
+                                        <li>one</li>
+                                        <li>two</li>
+                                        <li>three</li>
+                                        <li>four</li>
+                                        <li>five</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <div class="vertical"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <b style="text-align:justify;font-size:x-large">Objective</b>
+                    <p id="objectiveT1">This is an introductory objective to check how much is left in the second column.This will tell us that.Till last full stop i think the whole page was filled</p>
+                </div>
+                <div>
+                    <b style="text-align:left;font-size:x-large">Work Experience</b>
+                    <div>
+                        <ul id="work_experienceT1">
+                            <li>one</li>
+                            <li>two</li>
+                            <li>three</li>
+                            <li>four</li>
+                            <li>five</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <b style="text-align:left;font-size:x-large">Academic Qualification</b>
+                    <div>
+                        <ul id="academic_qualificationT1">
+                            <li>one</li>
+                            <li>two</li>
+                            <li>three</li>
+                            <li>four</li>
+                            <li>five</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <b style="text-align:left;font-size:x-large">Projects</b>
+                    <div>
+                        <ul id="projectT1">
+                            <li>one</li>
+                            <li>two</li>
+                            <li>three</li>
+                            <li>four</li>
+                            <li>five</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="container mt-3 text-center ">
+            <button onclick="printresume1()" class="btn background hide1">
+                Print Resume    
+            </button>
+        </div>
+    </div>
+    <!-- Resume Template 2 -->
+    <div class="container mt-4" id="resume_template2">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <!-- first column -->
+            <div class="col-md-6"> 
+                <!-- first block -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="Rest of the images/default.jpg" alt="" class="img-fluid myimg" id="profile_image" style="height: 100%;">
+                        </div>
+                        <div class="col-md-4">
+                            <h1 style="font-size: 25px;" id="nameT2"><b>Ujjwal Kumar</b></h1>
+                            <p id="objectiveT2" style="text-align: justify;">This is an introductory paragraph.Which is made to make sure about the area available to the given column</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- Work Experience -->
+                <div class="card mt-5" style="border: none;">
+                    <div class="card-header" style="background-color: white;border:none;">
+                        <h1 style="text-align: left;"><img src="Symbols/work_experience.jpg" style="height: 70px;"><b>Work Experience</b></h1>
+                    </div>
+                    <div class="card-body">
+                        <ul id="work_experienceT2">
+                            <li>one</li>
+                            <li>two</li>
+                            <li>three</li>
+                            <li>four</li>
+                            <li>five</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Education -->
+                <div class="card mt-1" style="border:none;">
+                    <div class="card-header" style="background-color: white;border:none;">
+                        <h1 style="text-align: left;"><img src="Symbols/education.png" style="height: 30px;margin:10px"><b>Education</b></h1>
+                    </div>
+                    <div class="card-body">
+                        <ul id="educationT2">
+                            <li>one</li>
+                            <li>two</li>
+                            <li>three</li>
+                            <li>four</li>
+                            <li>five</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Academic Qualification -->
+                <div class="card" style="border: none;">
+                    <div class="card-header" style="background-color: white;border:none;">
+                        <h1 style="text-align: left;"><img src="Symbols/academic.png" style="height: 50px;margin:10px"><b>Academic Qualification</b></h1>
+                    </div>
+                    <div class="card-body" style="border: none;">
+                        <ul id="academic_qualificationT2">
+                            <li>one</li>
+                            <li>two</li>
+                            <li>three</li>
+                            <li>four</li>
+                            <li>five</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Column -->
+            <div class="col-md-4">
+                <!-- first block -->
+                <div id="box">
+                    <br> 
+                    <p style="display: inline;"><i class="bi bi-envelope-fill" style="background-color: white;margin:5px;border-radius:2px;"></i><p><a href="#1" id="gmailT2" style="word-wrap:break-word ;text-decoration: none;color:white">ujjwal@gmail.com</a></p></p>
+                    <p style="display: inline;"><i class="bi bi-facebook" style="background-color: white;margin:5px;border-radius:2px;"></i><p><a href="#1" id="fbT2" style="word-wrap:break-word ;text-decoration: none;color:white">https://www.facebook.com/Ujjwal_Kumar_Nigam</a></p></p>
+                    <p style="display: inline;"><i class="bi bi-instagram" style="background-color: white;margin:5px;border-radius:2px;"></i><p><a href="#1" id="insT2" style="word-wrap:break-word ;text-decoration: none;color:white">https://www.instagram.com/Ujjwal_Kumar_Nigam</a></p></p>
+                    <p style="display: inline;"><i class="bi bi-linkedin" style="background-color: white;margin:5px;border-radius:2px;"></i><p><a href="#1" id="linkT2" style="word-wrap:break-word ;text-decoration: none;color:white">https://www.linkedin.com/Ujjwal_Kumar_Nigam</a></p></p>   
+                    <p style="display: inline;"><i class="bi bi-phone-fill" style="margin:5px;border-radius:2px;background-color:white"></i><p style="color: white;background-color:darkslateblue" id="contactT2">6388179838</p></p>
+                    <p style="display: inline;"><i class="bi bi-geo-alt-fill" style="margin:5px;border-radius:2px;background-color:white;" ></i><p style="color: white;background-color:darkslateblue" id="addressT2">Aashiana,Lko</p></p>
+                </div>
+                <!-- Second Block : skills -->
+                <div id="box" class="mt-4">
+                    <div class="card" style="border: none;background-color:darkslateblue">
+                        <div class="card-header" style="text-decoration: none; border:none;background-color:darkslateblue;font-size:25px"><img src="Symbols/skills.jpg" style="height: 30px;margin:10px">Skills</div>
+                        <div class="card-body" style="border: none;">
+                            <ul id="skillsT2" style="background-color:darkslateblue;color:white">
+                                <li>one</li>
+                                <li>two</li>
+                                <li>three</li>
+                                <li>four</li>
+                                <li>five</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Projects -->
+                    <div class="card" style="border: none;background-color:darkslateblue">
+                        <div class="card-header" style="text-decoration: none; border:none;background-color:darkslateblue;color:white;font-size:25px">Projects</div>
+                        <div class="card-body" style="border:none">
+                            <ol id="projectsT2" style="color: white;">
+                                <li>First</li>
+                                <li>second</li>
+                                <li>third</li>
+                                <li>fourth</li>
+                                <li>fifth</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="container mt-3 text-center ">
+            <button onclick="printresume2()" class="btn background hide2">
+                Print Resume    
+            </button>
+        </div>
+    </div>
+    <!-- Resume Template 3 -->
+    <div class="container" style="background-color: #355F91" id="resume_template_3">
+        <div class="row">
+            <div class="col-md-3 my-6" style="background-color: #253F60;margin:55px 0px 55px 48px">  
+                <div class="card mx-3" style="border:none;background-color: #253F60">
+                    <div class="card-header text-center" style="border: none;background-color:#355F91;color:white;margin-top:220px;border-radius:10px">
+                        Details
+                    </div>
+                    <div class="card-body my-2" style="background-color: #253F60;color:white">
+                        <p id="phoneT3" style="margin: 0px;">6388179838</p>
+                        <p id="addressT3" style="margin:5px 0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis</p>
+                        <p id="gmailT3">21248@iiitu.ac.in</p>
+                        <p style="margin: 0px;">
+                            <i class="bi bi-facebook" style="margin-right: 17px;color:white;font-size:20px"></i><span id="facebookT3" style="color:white">www.facebook.com</span>
+                        </p>
+                        <p style="margin:5px 0">
+                            <i class="bi bi-linkedin" style="margin-right: 17px;color:white;font-size:20px"></i><span id="linkedinT3" style="color: white;">www.linkedin.com</span>
+                        </p>
+                        <p style="margin:0px">
+                            <i class="bi bi-twitter" style="color:white;font-size:20px;margin-right:17px"></i><span id="twitterT3" style="color:white">www.twitter.com</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card mx-3" style="border:none;background-color:#253F60">
+                    <div class="card-header text-center" style="background-color: #355F91;color:white;border-radius:10px">
+                        Skills
+                    </div>
+                    <div class="card-body" style="background-color: #253F60;color:white">
+                        <ul id="skillsT3">
+                            <li>one</li>
+                            <li>two</li>
+                            <li>three</li>
+                            <li>four</li>
+                            <li>five</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card mx-3" style="background-color: #253F60;border:none">
+                    <div class="text-center card-header" style="background-color: #355F91;color:white;border-radius:10px">
+                        Projects
+                    </div>
+                    <div class="card-body" style="background-color: #253F60;color:white">
+                        <ul id="projectsT3">
+                            <li>one</li>
+                            <li>two</li>
+                            <li>three</li>
+                            <li>four</li>
+                            <li>five</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8" style="background-color:white;margin:55px 48px 55px 7px;">
+                <div class="text-center" style="margin: 20px 45px;">
+                    <div style="background-color: #355F91;color:white;border-radius:30px;font-size:40px" id="nameT3">Ujjwal Kumar Nigam</div>
+                    <br>
+                    <div class="card" style="border:none;background-color:white;color:black">
+                        <div class="card-header" style="background-color: white;color:black;border:none;text-align:center;font-size:x-large;margin:0px"><b>Objective</b></div>
+                        <div class="card-body" style="background-color: white;color:black;border:none">
+                            <p id="objectiveT3" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam neque id aliquid temporibus eligendi numquam, tempore placeat facere doloribus, excepturi, suscipit nesciunt consectetur obcaecati? Veniam aspernatur totam eligendi ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quam esse quos, distinctio illo deserunt ipsam aliquam animi inventore recusandae, fugit commodi eos aut autem magni qui vel assumenda tenetur.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="card-header text-center" style="background-color: #355F91;color:white;font-size:40px;border-radius:30px;">Academic Details</div><br>
+                    <div class="card-body" style="border:none;background-color:white">
+                        <div class="card" style="border: none;">
+                            <div class="card-header" style="background-color: white;color:black;border:none;text-align:left;font-size:x-large;margin:0px"><b>Education</b></div>
+                            <div class="card-body" style="background-color: white;color:black;border:none">
+                                <ul id="educationT3" style="text-align: justify;">
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card" style="border: none;background-color:white">
+                            <div class="card" style="color:black;border:none;text-align:left;font-size:x-large;margin-left:18px"><b>Work Experience</b></div>
+                            <div class="card-body" style="color:black;border:none">
+                                <ul id="work_experienceT3" style="text-align: justify;">
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="card" style="border: none;">
+                            <div class="card-header" style="background-color:#355F91;color:white;border:none;border-radius:40px;text-align:center;font-size:40px;margin:0px">Extra Curricular</div>
+                            <div class="card-body" style="background-color: white;color:black;border:none">
+                                <ul id="academic_qualificationT3" style="text-align: justify;">
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3 text-center ">
+            <button onclick="printresume3()" class="btn background hide3">
+                Print Resume    
+            </button>
+        </div>
+    </div>
+    <!-- Resume Template 4 -->
+    <div class="container" style="background-color: white;width:1200px" id="resume_template_4">
+        <div class="row">
+            <div class="col-md-3" style="margin:40px 0px 40px 120px;">
+                <div><img src="Rest of the images/college_logo.png" id="image_box"></div>
+                <div style="background-color: #0170C1;">
+                    <p id="firstnameT4" style="color:white;margin-bottom:0px;font-size:45px;padding-left:10px;">Ujjwal</p>
+                    <p id="lastnameT4" style="color: white;margin-top:0px;font-size:45px;padding-left:10px;margin-bottom:0px">Nigam</p>
+                    <p style="color:white;padding-left:10px;margin-top:20px;margin-bottom:0px;font-size:18px;text-decoration:underline"><b>Profile:</b></p>
+                    <p style="color:white;text-align:justify;padding:10px;word-wrap:break-word" id="objectiveT4">hello my name is ujjwal kumar nigam and i am writing this to check the width and the display properties of my new paragraph.i thought that the spacing somwhere in the paragraph were uneven so ia m writing to make sure of that.</p>
+                    <p style="color:white;font-size:18px;margin:0px;padding-left:10px;text-decoration:underline"><b>Contact:</b></p>
+                    <div style="margin:10px 0px 0px 0px"></div>
+                    <i class="bi bi-geo-alt-fill" style="padding:10px;color:white;"></i><p id="addressT4" style="color:white;margin:0px;padding:10px;word-wrap:break-word">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <i class="bi bi-phone-fill" style="color:white;padding:10px"></i><p id="phoneT4" style="color:white;margin:0px;padding:10px">6388179838</p>
+                    <i class="bi bi-envelope-fill" style="color:white;padding:10px"></i><p id="gmailT4" style="color:white;margin:0px;padding:10px">21248@iiitu.ac.in</p>
+                    <p style="color:white;padding:10px;margin:0px;text-decoration:underline;font-size:18px"><b>Social Profile:</b></p>
+                    <p style="color:white;padding:10px 10px 0px 10px;margin:0px;"><b>FACEBOOK</b></p>
+                    <p id="facebookT4" style="color:white;padding:0px 10px 0px 10px;margin:0px;word-wrap:break-word">www.facebook.com</p>
+                    <p style="color:white;padding:10px 10px 0px 10px;margin:0px;"><b>TWITTER</b></p>
+                    <p id="twitterT4" style="color:white;padding:0px 10px 0px 10px;margin:0px;word-wrap:break-word">www.twitter.com</p>
+                    <p style="color:white;padding:10px 10px 0px 10px;margin:0px;"><b>LINKEDIN</b></p>
+                    <p id="linkedinT4" style="color:white;padding:0px 10px 30px 10px;margin:0px;word-wrap:break-word">www.linkedin.com</p>
+                </div>
+            </div>
+            <div class="col-md-7" style="margin:50px 0px;">
+                <!-- Work Experience -->
+                <div class="card" style="border:none;background-color:white;">
+                    <div class="card-header" id="card_style">
+                        <b>WORK EXPERIENCE</b>
+                    </div>
+                    <div class="card-body" id="card_style">
+                        <ul id="work_experienceT4">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tenetur culpa, nam aspernatur voluptate saepe dolore maxime? Enim earum rerum</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tenetur culpa, nam aspernatur voluptate saepe dolore maxime? Enim earum rerum</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tenetur culpa, nam aspernatur voluptate saepe dolore maxime? Enim earum rerum</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tenetur culpa, nam aspernatur voluptate saepe dolore maxime? Enim earum rerum</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tenetur culpa, nam aspernatur voluptate saepe dolore maxime? Enim earum rerum</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Education -->
+                <div class="card" style="border:none;background-color:white;">
+                    <div class="card-header" id="card_style">
+                        <b>EDUCATION</b>
+                    </div>
+                    <div class="card-body" id="card_style">
+                        <ul id="educationT4">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tenetur culpa, nam aspernatur voluptate saepe dolore maxime? Enim earum rerum</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tenetur culpa, nam aspernatur voluptate saepe dolore maxime? Enim earum rerum</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tenetur culpa, nam aspernatur voluptate saepe dolore maxime? Enim earum rerum</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tenetur culpa, nam aspernatur voluptate saepe dolore maxime? Enim earum rerum</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tenetur culpa, nam aspernatur voluptate saepe dolore maxime? Enim earum rerum</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Skills -->
+                <div class="card" style="border:none;background-color:white;">
+                    <div class="card-header" id="card_style">
+                        <b>SKILLS</b>
+                    </div>
+                    <div class="card-body" id="card_style">
+                        <ul id="skillsT4">
+                            <li id="list_style">skill1</li>
+                            <li id="list_style">skill1</li>
+                            <li id="list_style">skill1</li>
+                            <li id="list_style">skill1</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Projects -->
+                <div class="card" style="border:none;background-color:white;">
+                    <div class="card-header" id="card_style">
+                        <b>PROJECTS</b>
+                    </div>
+                    <div class="card-body" id="card_style">
+                        <ul id="projectT4">
+                            <li id="list_style">Project1</li>
+                            <li id="list_style">Project2</li>
+                            <li id="list_style">Project3</li>
+                            <li id="list_style">Project4</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3 text-center ">
+            <button onclick="printresume4()" class="btn background hide4">
+                Print Resume    
+            </button>
+        </div>
+    </div>
+    <!-- Template 5 -->
+    <div class="container" style="background-color: #33d230" id="resume_template_5">
+        <div class="row">
+            <div class="col-md-3 my-6" style="background-color: white;margin:55px 0px 55px 48px">  
+                <div class="card mx-3" style="border:none;background-color: white">
+                    <div class="card-header text-center" style="border: none;background-color:black;color:white;margin-top:220px;border-radius:10px">
+                        Details
+                    </div>
+                    <div class="card-body my-2" style="background-color: white;color:black">
+                        <p id="phoneT5" style="margin: 0px;">6388179838</p>
+                        <p id="addressT5" style="margin:5px 0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis</p>
+                        <p id="gmailT5">21248@iiitu.ac.in</p>
+                        <p style="margin: 0px;">
+                            <i class="bi bi-facebook" style="margin-right: 17px;color:black;font-size:20px"></i><span id="facebookT5" style="color:black">www.facebook.com</span>
+                        </p>
+                        <p style="margin:5px 0">
+                            <i class="bi bi-linkedin" style="margin-right: 17px;color:black;font-size:20px"></i><span id="linkedinT5" style="color: black;">www.linkedin.com</span>
+                        </p>
+                        <p style="margin:0px">
+                            <i class="bi bi-twitter" style="color:black;font-size:20px;margin-right:17px"></i><span id="twitterT5" style="color:black">www.twitter.com</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card mx-3" style="border:none;background-color: white;">
+                    <div class="card-header text-center" style="background-color: black;color:white;border-radius:10px">
+                        Objective
+                    </div>
+                    <div class="card-body" style="background-color: white;color:black;text-align:justify" id="objectiveT5">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, corporis reprehenderit placeat ullam odit excepturi facere dolorem suscipit doloremque laudantium provident voluptatem ad voluptate nesciunt, commodi sed voluptas perspiciatis eum!
+                    </div>
+                </div>
+                <div class="card mx-3" style="border:none;background-color:white">
+                    <div class="card-header text-center" style="background-color: black;color:white;border-radius:10px">
+                        Skills
+                    </div>
+                    <div class="card-body" style="background-color: white;color:black">
+                        <ul id="skillsT5">
+                            <li>one</li>
+                            <li>two</li>
+                            <li>three</li>
+                            <li>four</li>
+                            <li>five</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card mx-3" style="background-color: white;border:none">
+                    <div class="text-center card-header" style="background-color: black;color:white;border-radius:10px">
+                        Projects
+                    </div>
+                    <div class="card-body" style="background-color: white;color:black">
+                        <ul id="projectsT5">
+                            <li>one</li>
+                            <li>two</li>
+                            <li>three</li>
+                            <li>four</li>
+                            <li>five</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8" style="background-color:rgb(255, 255, 255);margin:55px 48px 55px 7px;">
+                <div class="text-center" style="margin: 20px 45px;">
+                    <div style="background-color: rgb(72, 234, 252);color:black;border-radius:30px;font-size:40px" id="nameT5">Ujjwal Kumar Nigam</div>
+                    <br>
+                    <div class="card" style="border:none;background-color:white;color:black">
+                        <div class="card-header" style="background-color: white;color:black;border:none;text-align:center;font-size:x-large;margin:0px"><b>Objective</b></div>
+                        <div class="card-body" style="background-color: white;color:black;border:none">
+                            <p id="objectiveT5" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut aperiam neque id aliquid temporibus eligendi numquam, tempore placeat facere doloribus, excepturi, suscipit nesciunt consectetur obcaecati? Veniam aspernatur totam eligendi ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quam esse quos, distinctio illo deserunt ipsam aliquam animi inventore recusandae, fugit commodi eos aut autem magni qui vel assumenda tenetur.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="card-header text-center" style="background-color: black;color:white;font-size:40px;border-radius:30px;">Academic Details</div><br>
+                    <div class="card-body" style="border:none;background-color:white">
+                        <div class="card" style="border: none;">
+                            <div class="card-header" style="background-color: white;color:black;border:none;text-align:left;font-size:x-large;margin:0px"><b>Education</b></div>
+                            <div class="card-body" style="background-color: white;color:black;border:none">
+                                <ul id="work_experienceT5" style="text-align: justify;">
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card" style="border: none;background-color:white">
+                            <div class="card" style="color:black;border:none;text-align:left;font-size:x-large;margin-left:18px"><b>Work Experience</b></div>
+                            <div class="card-body" style="color:black;border:none">
+                                <ul id="academic_qualificationT5" style="text-align: justify;">
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="card" style="border: none;">
+                            <div class="card-header" style="background-color:black;color:white;border:none;border-radius:40px;text-align:center;font-size:40px;margin:0px">Extra Curricular</div>
+                            <div class="card-body" style="background-color: white;color:black;border:none">
+                                <ul id="educationT5" style="text-align: justify;">
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eius nobis reiciendis fugiatdoloribus magni delectus eum tempor</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3 text-center ">
+            <button onclick="printresume5()" class="btn background hide4">
+                Print Resume    
+            </button>
+        </div>
+    </div>
+    <!-- Template6 -->
+    <div class="container" id="resume_template_6">
+        <div class="row">
+            <div class="col-md-4 text-center py-5 background">
+                <!-- First Column -->
+                <img src="Rest of the images/default.jpg" class="img-fluid myimg">
+                <!-- img-fluid makes the width of the image equal to the width of the column -->
+                <div class="container">
+                    <p id="nameT61">Name</p>
+                    <p id="contactT6">+913243234657,+916578654710</p>
+                    <p id="addressT6">Address</p>
+                    <hr>
+                    <!-- <button style="color: black;background-color: white;"><a href="https://www.facebook.com/Ujjwal_Kumar_Nigam" style="color:inherit;">Facebook</a></button> -->
+                    <p><a href="#1" id="fbT6" style="word-wrap:break-word ;text-decoration: none;">https://www.facebook.com/Ujjwal_Kumar_Nigam</a></p>
+                    <p><a href="#1" id="insT6" style="word-wrap:break-word ;text-decoration: none;">https://www.instagram.com/Ujjwal_Kumar_Nigam</a></p>
+                    <p><a href="#1" id="linkT6" style="word-wrap:break-word ;text-decoration: none;">https://www.linkedin.com/Ujjwal_Kumar_Nigam</a></p>
+                </div>
+            </div>
+            <div class="col-md-8 py-5 ">
+                <!-- Second Column -->
+                <h1 id="nameT62" class="text-center" style="font-weight:800px;">Ujjwal Kumar Nigam</h1>
+                <!-- Objective -->
+                <div class="card mt-4 ">
+                    <div class="card-header background">
+                        <h3>Objective</h3>
+                    </div>
+                    <div class="card-body">
+                        <p id="objectiveT6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id illo aliquam cum aut amet. Rem nam esse, eos quisquam, est autem aperiam fuga veritatis reiciendis, maxime veniam? Tenetur, nemo laborum.</p>
+                    </div>
+                </div>
+                <!-- Work Experience -->
+                <div class="card mt-4 ">
+                    <div class="card-header background">
+                        <h3>Work Experience</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="work_experienceT6">
+                            <li>one</li>
+                            <li>two</li>
+                            <li>three</li>
+                            <li>four</li>
+                            <li>five</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Academic Qualification -->
+                <div class="card mt-4 ">
+                    <div class="card-header background">
+                        <h3>Academic Qualification</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul id="academic_qualificationT6">
+                            <li>one</li>
+                            <li>two</li>
+                            <li>three</li>
+                            <li>four</li>
+                            <li>five</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container mt-3 text-center">
+                    <button onclick="printresume6()" class="btn background hide">
+                        Print Resume    
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="maindiv1 mt-5" id="footer">
+        <div id="e"><p style="font-size: x-large;">Follow Us : </p><br>
+          <button style="color:white;width: 50px;height: 50px;color: white; background-color: black;font-size: 30px;" ><a href="https://www.facebook.com/profile.php?id=100074815585900" style="color: inherit"><i class="bi bi-facebook connected"></i></a></button>&nbsp;
+          <button  style="color:white;width: 50px;height: 50px;background-color: black; font-size: 30px;" ></i><a href="https://www.instagram.com/just_one_ujjwal/?next=%2F" style="color: inherit"><i class="bi bi-instagram connected"></i></a></button>&nbsp;
+          <br>
+          <br>
+          <button  style="color:white;width: 50px;height: 50px;background-color: black;font-size: 30px;" ><i class="bi bi-twitter connected"></i></button>&nbsp;
+          <button  style="color:white;width: 50px;height: 50px;background-color: black;font-size: 30px;"><a href="https://www.linkedin.com/in/ujjwal-kumar-iiitu-82920825a/" style="color: inherit"><i class="bi bi-linkedin connected"></i></a></button>&nbsp;
+        </div>
+        <div id="f" align="left"><p style="font-size: x-large;">Company</p>
+          <br>
+          <a href="http://127.0.0.1:5500/Test.html" target="_blank" style="text-decoration: none; color: white;">Home</a>
+          <br><br>
+          Careers
+          <br><br>
+          <a href="http://127.0.0.1:5500/Terms.html" style="text-decoration: none;color: white;" target="_blank">Terms and Privacy</a>
+          <br><br>
+        </div>
+        <div id="g"><p style="font-size: x-large;">Explore</p>
+          <br>
+          Design Ideas
+          <br><br>
+          Custom Prints
+          <br><br>
+          Font Pairing
+          <br><br>
+          Template Directory
+          <br><br>
+          Color Pallete Generator
+          <br><br>
+        </div>
+        <div id="h"><p style="font-size: x-large;">Customer Support</p>
+          <br>
+          Contact Us :
+          <br><br>
+          Call us at : <br> <a href="tel:6388179838" style="text-decoration: none;">6388179838</a>
+          <br><br>
+          Mail us at : 
+          <br>
+          <a href="mailto:21248@iiitu.ac.in" style="text-decoration: none;">21248@iiitu.ac.in</a>
+          <br><br>
+          <a href="http://127.0.0.1:5500/FAQ.html" style="color: white;text-decoration: none;" target="_blank">FAQs</a>
+          <br><br>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

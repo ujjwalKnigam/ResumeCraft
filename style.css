@@ -1,0 +1,81 @@
+/* body
+{
+    background-color: black;
+} */
+#resume_form2
+{
+    display: none;
+}
+#resume_template1
+{
+    display: none;
+}
+#resume_template2
+{
+    display: none;
+}
+#resume_template_3
+{
+    display: none;
+}
+#resume_template_4
+{
+    display: none;
+}
+#resume_template_5
+{
+    display: none;
+}
+#resume_template_6
+{
+    display: none;
+}
+.myimg
+{
+    /* border: 1px solid black; */
+    width: 200px;
+}
+.background
+{
+    background-color: black;
+    color:white
+}
+#box
+{
+    background-color:darkslateblue;
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px;
+}
+#template_buttons
+{
+    display:none;
+}
+.vertical {
+    border-left: 2px solid rgb(196, 164, 84);
+    height: 100%;
+    position:absolute;
+    margin-left: 40px;
+}
+#image_box
+{
+    width: 100%;
+    height: 250px;
+}
+
+#card_style
+{
+    border:none;
+    background-color: white;
+    color:black
+}
+#list_style
+{
+    margin:0px 0px 10px 0px;
+}
+#bar_style
+{
+    padding:10px;
+    width:450px;
+    background-color:#0170C1;
+}

@@ -1,0 +1,36 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+#q1{grid-area: q10;}
+#q2{grid-area: q20;}
+#q3{grid-area: q30;}
+#q4{grid-area: q40;}
+#q5{grid-area: q50;}
+.maindiv
+{
+    display: grid;
+    grid-template-areas: "q10 q10 q10 q10 q10 "
+    "q20 q20 q20 q20 q20 "
+    "q30 q30 q30 q30 q30 "
+    "q40 q40 q40 q40 q40 "
+    "q50 q50 q50 q50 q50 ";
+    padding : 0px;
+    margin: 0px;
+    grid-gap:20px;
+    border-radius: 10px;
+    justify-content: center;
+}
+.maindiv > div{
+    padding : 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 800px;
+    background-color:white;
+}
+body
+{
+    background-color:#D3D3D3;
+}
